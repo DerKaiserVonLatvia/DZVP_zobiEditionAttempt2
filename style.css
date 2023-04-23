@@ -23,7 +23,7 @@
 
 /*Filter styles*/
 .saturate { filter: saturate(3); }
-.grayscale { filter: grayscale(100%); }
+.grayscale { filter: grayscale(40%); }
 .contrast { filter: contrast(160%); }
 .brightness { filter: brightness(0.25); }
 .blur { filter: blur(1px); }
