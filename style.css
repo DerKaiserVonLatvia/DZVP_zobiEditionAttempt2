@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*Parallax effect*/
+@layer utilities {
+    .perspective {
+        perspective: 100px;
+    }
+    
+    .preserve-3d {
+        transform-style: preserve-3d;
+    }
+
+    .distance-1 {
+        transform: translateZ(-100px) scale(2);
+    }
+
+    .distance-2 {
+        transform: translateZ(-50px) scale(1.5);
+    }
+}
+
+/*Filter styles*/
+.saturate { filter: saturate(3); }
+.grayscale { filter: grayscale(100%); }
+.contrast { filter: contrast(160%); }
+.brightness { filter: brightness(0.25); }
+.blur { filter: blur(1px); }
+.invert { filter: invert(100%); }
+.sepia { filter: sepia(100%); }
+.huerotate { filter: hue-rotate(90deg); }
+.rss.opacity { filter: opacity(50%); }
