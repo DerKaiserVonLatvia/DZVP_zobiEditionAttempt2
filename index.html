@@ -15,32 +15,6 @@
   </head>
 <!--P------------------------------------------------------------------>
   <body class="bg-bgd text-base text-td selection:bg-tad selection:text-bgd overflow-hidden">
-<!--B------------------------------------------------------------------>
-    <div id="bottom-banner" tabindex="-1" class="fixed flex-col items-left sm:items-start sm:flex-row md:justify-center bottom-0 left-0 z-20 flex w-full p-0 border-t-4 border-tad bg-bgd">
-      <div>
-        <p class="flex items-center text-sm text-tmd">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="34" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1">
-            <path d="M 2.511719 6.132812 L 27.191406 6.132812 L 27.191406 16 L 2.511719 16 Z M 2.511719 6.132812 " clip-rule="nonzero"/></clipPath><clipPath id="id2"><path d="M 2.511719 15 L 27.191406 15 L 27.191406 24.277344 L 2.511719 24.277344 Z M 2.511719 15 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)">
-            <path fill="rgb(0%, 35.688782%, 73.329163%)" d="M 24.445312 6.132812 L 5.257812 6.132812 C 3.746094 6.132812 2.515625 7.382812 2.515625 8.925781 L 2.515625 15.207031 L 27.183594 15.207031 L 27.183594 8.925781 C 27.183594 7.382812 25.957031 6.132812 24.445312 6.132812 Z M 24.445312 6.132812 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id2)">
-            <path fill="rgb(100%, 83.529663%, 0%)" d="M 27.183594 21.488281 C 27.183594 23.027344 25.957031 24.277344 24.445312 24.277344 L 5.257812 24.277344 C 3.746094 24.277344 2.515625 23.027344 2.515625 21.488281 L 2.515625 15.207031 L 27.183594 15.207031 Z M 27.183594 21.488281 " fill-opacity="1" fill-rule="nonzero"/></g>
-          </svg>
-          <a href="https://pbs.twimg.com/media/FhnBaFBVUAA620i.jpg" class="flex items-center md:hover:text-td text-tmd">
-            Donate to support Ukraine's independence
-          </a>
-        </p>
-      </div>
-      <div>
-        <button data-dismiss-target="#bottom-banner" type="button" class=" text-tmd hover:bg-tad hover:text-bgd rounded-lg text-sm p-1.5">
-          <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-          </svg>
-        </button>
-      </div>                                          
-    </div>
-    <a href="#scroll-up" class="fixed items-center bottom-1 md:bottom-3 right-1 md:right-7 z-20 flex justify-center font-medium p-3 border-4 border-tad bg-bgd text-tad rounded-full  hover:bg-tad hover:text-bgd">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="5" stroke="currentColor" class="h-4 w-4"><path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" clip-rule="evenodd" /></svg>
-    </a>
-<!--D------------------------------------------------------------------>
     <div class="h-screen pb-12 sm:pb-0 overflow-y-auto overflow-x-hidden relative scroll-smooth perspective">
 <!--N------------------------------------------------------------------>
       <nav class="sticky bg-bgd px-2 sm:px-4 py-2.5 z-20 top-0 left-0 border-4 border-t-0 rounded-b-2xl border-tad mx-0 md:mx-14">
@@ -50,9 +24,21 @@
           <span class="self-center text-xl font-semibold tdspace-nowrap text-tad">DZVP</span>
         </a>
         <div class="flex md:order-2">
-          <button type="button" class="text-tad bg-bgd hover:bg-bgd focus:ring-2 focus:outline-none focus:ring-tad font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">Eng</button>
-          
-          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-tad rounded-lg md:hidden  focus:outline-none focus:ring-2 focus:ring-tad" aria-controls="navbar-sticky" aria-expanded="false">
+          <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar4" class="flex items-center justify-between w-full pl-3 pr-1 text-tmd bg-none hover:text-td font-medium md:hover:bg-transparent  rounded-lg text-sm px-5 py-2.5 mr-3 md:mr-0 md:p-0 md:w-auto">
+            Eng
+            <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div id="dropdownNavbar4" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
+              <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="#pLv" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Lv</a>
+                </li>
+                <li>
+                  <a href="#pUkr" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Ukr</a>
+                </li>
+              </ul>
+          </div>
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 text-sm text-tad rounded-lg md:hidden" aria-controls="navbar-sticky" aria-expanded="false">
             <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
           </button>
@@ -66,13 +52,13 @@
               About
               <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
-            <div id="dropdownNavbar1" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-44">
+            <div id="dropdownNavbar1" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
                 <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#About us" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">About us</a>
+                    <a href="#About us" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">About us</a>
                   </li>
                   <li>
-                    <a href="#Info" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Info</a>
+                    <a href="#Info" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Info</a>
                   </li>
                 </ul>
             </div>
@@ -80,16 +66,16 @@
               Contact
               <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
-            <div id="dropdownNavbar2" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-44">
+            <div id="dropdownNavbar2" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
                 <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#Twitter" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Twitter</a>
+                    <a href="#Twitter" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Twitter</a>
                   </li>
                   <li>
-                    <a href="#Email" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Email</a>
+                    <a href="#Email" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Email</a>
                   </li>
                   <li>
-                    <a href="#Telegram" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Telegram</a>
+                    <a href="#Telegram" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Telegram</a>
                   </li>
                 </ul>
             </div>
@@ -97,16 +83,16 @@
               Zobi
               <svg class="w-5 h-5 ml-1" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
-            <div id="dropdownNavbar3" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-44">
+            <div id="dropdownNavbar3" class="z-10 hidden border-2 border-tad bg-bgd divide-y divide-bgd rounded-lg shadow w-auto">
                 <ul class="py-2 text-sm" aria-labelledby="dropdownLargeButton">
                   <li>
-                    <a href="#Irena?" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Oleg?</a>
+                    <a href="#Irena?" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad md:hover:bg-none hover:text-bgd ">Oleg?</a>
                   </li>
                   <li>
-                    <a href="#Oleg?" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Irena?</a>
+                    <a href="#Oleg?" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Irena?</a>
                   </li>
                   <li>
-                    <a href="#Meow?" class="block px-4 py-2 mx-2 rounded md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Meow?</a>
+                    <a href="#Meow?" class="block px-4 py-2 mx-2 rounded font-medium md:hover:text-bgd text-tmd hover:bg-tad hover:text-bgd">Meow?</a>
                   </li>
                 </ul>
             </div>
@@ -133,7 +119,7 @@
       </header>
 <!--M------------------------------------------------------------------>
       <main class="relative mt-16 sm:mt-24 lg:mt-40 -mb-96 grid gap-16 sm:gap-24 lg:gap-40 overflow-hidden bottom-96">
-        <div class="columns border-4 bg-bgd border-tad rounded-xl mx-4 md:mx-16 lg:mx-28 mt-20 md:mt-20 lg:mt-0 p-5">
+        <div class="columns border-4 bg-bgd border-tad rounded-xl mx-4 md:mx-16 lg:mx-28 mt-20 md:mt-20 lg:mt-0 p-5 fade-up">
         <div class="md:columns-2 lg:columns-3 xl:columns-4 space-y-4">
           <div class="rounded-md border-4  bg-bgd border-tad break-inside-avoid">
             <a href="#News">
@@ -406,5 +392,31 @@
         </div>   
       </footer> 
       </div>
+<!--B------------------------------------------------------------------>
+      <div id="bottom-banner" tabindex="-1" class="fixed flex-col items-left sm:items-start sm:flex-row md:justify-center bottom-0 left-0 z-20 flex w-full p-0 border-t-4 border-tad bg-bgd">
+        <div>
+          <p class="flex items-center text-sm text-tmd">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" zoomAndPan="magnify" viewBox="0 0 30 30.000001" height="34" preserveAspectRatio="xMidYMid meet" version="1.0"><defs><clipPath id="id1">
+              <path d="M 2.511719 6.132812 L 27.191406 6.132812 L 27.191406 16 L 2.511719 16 Z M 2.511719 6.132812 " clip-rule="nonzero"/></clipPath><clipPath id="id2"><path d="M 2.511719 15 L 27.191406 15 L 27.191406 24.277344 L 2.511719 24.277344 Z M 2.511719 15 " clip-rule="nonzero"/></clipPath></defs><g clip-path="url(#id1)">
+              <path fill="rgb(0%, 35.688782%, 73.329163%)" d="M 24.445312 6.132812 L 5.257812 6.132812 C 3.746094 6.132812 2.515625 7.382812 2.515625 8.925781 L 2.515625 15.207031 L 27.183594 15.207031 L 27.183594 8.925781 C 27.183594 7.382812 25.957031 6.132812 24.445312 6.132812 Z M 24.445312 6.132812 " fill-opacity="1" fill-rule="nonzero"/></g><g clip-path="url(#id2)">
+              <path fill="rgb(100%, 83.529663%, 0%)" d="M 27.183594 21.488281 C 27.183594 23.027344 25.957031 24.277344 24.445312 24.277344 L 5.257812 24.277344 C 3.746094 24.277344 2.515625 23.027344 2.515625 21.488281 L 2.515625 15.207031 L 27.183594 15.207031 Z M 27.183594 21.488281 " fill-opacity="1" fill-rule="nonzero"/></g>
+            </svg>
+            <a href="https://pbs.twimg.com/media/FhnBaFBVUAA620i.jpg" class="flex items-center md:hover:text-td text-tmd">
+              Donate to support Ukraine's independence
+            </a>
+          </p>
+        </div>
+        <div>
+          <button data-dismiss-target="#bottom-banner" type="button" class=" text-tmd hover:text-td rounded-lg p-1.5">
+            <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>                                          
+      </div>
+<!--S------------------------------------------------------------------>
+      <a href="#scroll-up" class="fixed items-center bottom-1  md:bottom-3 right-1 md:right-7 z-20 flex justify-center font-medium p-1.5 md:p-3 border-4 border-tad bg-tad text-bgd rounded-full">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke-width="5" stroke="currentColor" class="h-4 w-4"><path fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75" clip-rule="evenodd" /></svg>
+      </a>
   </body>
 </html>
