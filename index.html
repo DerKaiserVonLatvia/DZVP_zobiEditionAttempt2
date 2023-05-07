@@ -341,7 +341,7 @@
           </form>
 
 
-          
+
         </section>
 
 
@@ -349,6 +349,18 @@
           <input name="email" type="email" placeholder="Email" required>
           <button type="submit">Send</button>
         </form>
+
+        <script>
+          const scriptURL = 'https://script.google.com/macros/s/AKfycbzWydUHOTb-3hxnTW874GWL9EOXUK3cjPPI72aD9n5CnNhYiato_72kQbowzeDqTPRvzQ/exec'
+          const form = document.forms['submit-to-google-sheet']
+        
+          form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              .then(response => console.log('Success!', response))
+              .catch(error => console.error('Error!', error.message))
+          })
+        </script>
       </main>
 <!--F------------------------------------------------------------------>
       <footer class="relative border-t border-tad mt-16 sm:mt-24 lg:mt-40 py-6 sm:py-8 md:py-12">
